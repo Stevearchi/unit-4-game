@@ -49,8 +49,8 @@ function generator() {
     }
 
     function display() {
-        $('#randTotal').text('Try to get to: ' + randTotal);
-        $('#sum').text('Current score: ' + sum);
+        $('#randTotal').text('Their current total Evilness: ' + randTotal);
+        $('#sum').text('Your current estimation of the blackness of their souls: ' + sum);
         $('#wins').text('Wins: ' + wins);
         $('#losses').text('Losses: ' + losses);
     }
@@ -68,10 +68,10 @@ function generator() {
     
     while (playGame) {
         generator();
-        $('#images').append('<img id = "jamie" alt = "Jamie Lannister" src="' + lannisters.jamie.url + '">');
-        $('#images').append('<img id = "tywin" alt = "Tywin Lannister" src="' + lannisters.tywin.url + '">');
-        $('#images2').append('<img id = "cersi" alt = "Cersi Lannister" src="' + lannisters.cersi.url + '">');
-        $('#images2').append('<img id = "joffrey" alt = "Joffrey Lannister "src="' + lannisters.joffrey.url + '">');
+        $('#images').append('<img class="mr-3 mb-2" id = "jamie" alt = "Jamie Lannister" src="' + lannisters.jamie.url + '">');
+        $('#images').append('<img class="mb-2" id = "tywin" alt = "Tywin Lannister" src="' + lannisters.tywin.url + '">');
+        $('#images2').append('<img class="mr-4" id = "cersi" alt = "Cersi Lannister" src="' + lannisters.cersi.url + '">');
+        $('#images2').append('<img class="ml-2" id = "joffrey" alt = "Joffrey Lannister "src="' + lannisters.joffrey.url + '">');
         display();
         //click events
         $('#jamie').on('click', function () {
